@@ -1,73 +1,87 @@
 # CASE Data Preprocessing and Analysis
+
+Analyzing how temporal spacing and interlude content between scary videos affects physiological responses (ECG and GSR).
+
 ![ECG Activity Per Video](readme_images/ecg_case_image.png)
 
-Presentation video of experiment setup:
-[ECG-GSR-Annotations-Video Visualization](https://youtu.be/-avJuYvJ5Aw)
+## About
 
-## Overview
-This repository contains the code for preprocessing and analyzing the CASE dataset. Follow the steps below to execute the code in the provided Jupyter notebooks.
+This project investigates how the **duration** and **arousal content** of intervals between fear-inducing stimuli influence physiological responses to subsequent exposures. Using the CASE dataset, we analyze changes in heart rate and galvanic skin response between two scary video presentations.
 
-**IMPORTANT**: The statistical_analysis notebook is meant to be used with a table of contents. Please consider opening the notebook in an environment that supports this functionality, for easier navigation. We recommend installing jupyter.
+**Research Question:** How do the interlude duration and the proportion of low-arousal content between two scary videos affect the differences in physiological responses (ECG and GSR metrics)?
 
-Inside your virtual environment
-```bash
-pip install jupyter
-jupyter notebook
-```
+**Key Finding:** Longer intervals between scary videos significantly predict increased GSR peak amplitude in subsequent exposures — suggesting physiological fear responses can intensify rather than habituate given sufficient temporal spacing.
 
-## Prerequisites
+Presentation video: [ECG-GSR-Annotations-Video Visualization](https://youtu.be/-avJuYvJ5Aw)
 
-### Environment Setup
-It is recommended to create a clean Python environment
-#### Using Conda
+## Dataset
+
+This project uses the **Continuously Annotated Signals of Emotion (CASE)** dataset:
+
+> Sharma, K., Castellini, C., van den Broek, E.L., Albu-Schaeffer, A., & Schwenker, F. (2019). A dataset of continuous affect annotations and physiological signals for emotion analysis. *Scientific Data*, 6(1), 196. https://doi.org/10.1038/s41597-019-0209-0
+
+Download the dataset from: [Springer Nature Figshare](https://springernature.figshare.com/collections/A_dataset_of_continuous_affect_annotations_and_physiological_signals_for_emotion_analysis/4260668)
+
+## Getting Started
+
+### Prerequisites
+
+Create a clean Python environment:
+
+**Using Conda:**
 ```bash
 conda create -n case1_project_env python
 conda activate case1_project_env
 ```
 
-#### Using Python venv
+**Using Python venv:**
 ```bash
 python -m venv case1_project_env
 ```
-Activate environment on Windows
+
+Activate on Windows:
 ```bash
 case1_project_env\Scripts\activate
 ```
-Activate environment on Unix/MacOS
+
+Activate on Unix/MacOS:
 ```bash
 source case1_project_env/bin/activate
 ```
 
-### Clone the repository
+### Installation
+
+Clone the repository and install dependencies:
+
 ```bash
 git clone https://github.com/ChristosP1/CASE_project.git
 cd CASE_project
-```
-Make sure you have the necessary dependencies installed. You can install them using the following command:
-```bash
 pip install -r requirements.txt
 ```
-### Note1: 
-Move the CASE Full dataset in the same directory as the notebooks (or adjust location in first lines)
-### Note2: 
-The preprocessed files have already been created for convenience. However if something goes wrong, the safest option would be to delete the preproceseed folder and recreate everything. Please keep in mind that CPA takes too long (>20 min), so not recommended :)
 
-## Steps to Run the Code
-### 1. Open and Run the case1_preprocessing Notebook
+For the statistical analysis notebook with table of contents support:
+```bash
+pip install jupyter
+jupyter notebook
+```
 
-- Open the case1_preprocessing.ipynb notebook in Jupyter.
+### Data Setup
 
-- Set CPA = False and run all cells.
+Move the CASE Full dataset into the same directory as the notebooks (or adjust the location in the first lines of each notebook).
 
-- After completion, set CPA = True and run all cells again.
+> **Note:** The preprocessed files have already been created for convenience. If something goes wrong, delete the `preprocessed` folder and recreate everything. CPA takes >20 min, so use with caution.
 
-### 2. Open and Run the statistical_analysis Notebook
-- Open the case1_statistical_analysis.ipynb notebook in Jupyter.
+### Running the Analysis
 
-- Set CPA = False and run all cells.
+**1. Preprocessing**
+- Open `case1_preprocessing.ipynb`
+- Set `CPA = False` and run all cells
+- Set `CPA = True` and run all cells again
 
-- After completion, set CPA = True and run all cells again.
-
+**2. Statistical Analysis**
+- Open `case1_statistical_analysis.ipynb`
+- Set `CPA = False` and run all cells
+- Set `CPA = True` and run all cells again
 
 ## Acknowledgments
 
@@ -78,7 +92,3 @@ Contributors:
 - Christos Papageorgiou
 
 Original repository: [github.com/ChristosP1/CASE_project](https://github.com/ChristosP1/CASE_project)
-
-
-
-
