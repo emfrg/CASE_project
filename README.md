@@ -10,7 +10,7 @@ This project investigates how the **duration** and **arousal content** of interv
 
 **Research Question:** How do the interlude duration and the proportion of low-arousal content between two scary videos affect the differences in physiological responses (ECG and GSR metrics)?
 
-**Key Finding:** Longer intervals between scary videos significantly predict increased GSR peak amplitude in subsequent exposures — suggesting physiological fear responses can intensify rather than habituate given sufficient temporal spacing.
+**Key Finding:** Spacing out scares works. Longer intervals between fear-inducing content lead to stronger physiological responses. The finding provides practical insight for pacing horror in films, games, and immersive experiences.
 
 Presentation video: [ECG-GSR-Annotations-Video Visualization](https://youtu.be/-avJuYvJ5Aw)
 
