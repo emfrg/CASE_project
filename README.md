@@ -1,15 +1,13 @@
 # CASE Data Preprocessing and Analysis
-<p align="center">
-  <img src="readme_images/data_acquisition.png" alt="Experiment setup">
-</p>
+![ECG Activity Per Video](readme_images/ecg_case_image.png)
 
-(ORIGINAL) Presentation video of experiment setup:
+Presentation video of experiment setup:
 [ECG-GSR-Annotations-Video Visualization](https://youtu.be/-avJuYvJ5Aw)
 
 ## Overview
 This repository contains the code for preprocessing and analyzing the CASE dataset. Follow the steps below to execute the code in the provided Jupyter notebooks.
 
-**IMPORTANT**: The statistical_analysis notebook is very big because it is meant to be used with a table of contents. Please consider opening the notebook in an environment that supports this functionality, for easier navigation. We recommend installing jupyter.
+**IMPORTANT**: The statistical_analysis notebook is meant to be used with a table of contents. Please consider opening the notebook in an environment that supports this functionality, for easier navigation. We recommend installing jupyter.
 
 Inside your virtual environment
 ```bash
@@ -69,5 +67,18 @@ The preprocessed files have already been created for convenience. However if som
 - Set CPA = False and run all cells.
 
 - After completion, set CPA = True and run all cells again.
+
+
+## Acknowledgments
+
+Developed for the Advanced Quantitative Methods for HCI course at Utrecht University (2024).
+
+Contributors:
+- Emmanuel Fragkiadakis
+- Christos Papageorgiou
+
+Original repository: [github.com/ChristosP1/CASE_project](https://github.com/ChristosP1/CASE_project)
+
+
 
 
