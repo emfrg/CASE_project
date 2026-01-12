@@ -14,6 +14,9 @@ This project investigates how the **duration** and **arousal content** of interv
 
 Presentation video: [ECG-GSR-Annotations-Video Visualization](https://youtu.be/-avJuYvJ5Aw)
 
+## Paper
+For detailed methodology and findings, see the [full report](paper.pdf).
+
 ## Dataset
 
 This project uses the **Continuously Annotated Signals of Emotion (CASE)** dataset:
