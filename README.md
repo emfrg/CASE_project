@@ -15,7 +15,7 @@ This project investigates how the **duration** and **arousal content** of interv
 Presentation video: [ECG-GSR-Annotations-Video Visualization](https://youtu.be/-avJuYvJ5Aw)
 
 ## Paper
-For detailed methodology and findings, see the [full report](case1_final_report.pdf).
+For detailed methodology and findings, see the [full report](CASE1_final_report.pdf).
 
 ## Dataset
 
